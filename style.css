@@ -1,0 +1,102 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    /* Hiệu ứng cuộc trang scroll-behavior: smooth */
+    scroll-behavior: smooth;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body{
+    background-image: url(./img/Hinh-nen-bau-troi-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.text-right .line-one{
+    font-size: 70px;
+    font-weight: 200;
+    color: red;
+    position: absolute;
+    top: 6rem;
+    right: 20rem;
+    transform: rotate(336deg);
+    font-family: 'Lobster', cursive;
+}
+.text-right .line-two{
+    font-size: 105px;
+    font-weight: 400;
+    color: red;
+    position: absolute;
+    top: 10rem;
+    right: 6rem;
+    transform: rotate(336deg);
+    font-family: 'Lobster', cursive;
+}
+
+.text-left{
+    position: relative;
+    display: inline-flex;
+    width: 35%;
+    height: 100%;
+    z-index: 2;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.title-member{
+    font-size: 28px;
+    font-weight: 600;
+    border-left: 10px solid #fff;
+    padding-left: 15px;
+    padding-top: 5px;
+    margin-top: 90px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.avatar-left{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 5px solid white;
+    overflow: hidden;
+}
+.text-left .member1, .member2, .member3{
+    display: flex;
+    padding: 15px;
+}
+.member3{
+    padding-bottom: 250px;
+}
+.info-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 20px;
+}
+h2{
+    color: #fff;
+}
+.introduce-1{
+    font-style: italic;
+    color: yellow;
+    font-weight: 600;
+}
+.character-1{
+    font-style: italic;
+    color: #fff;
+    font-weight: 600;
+}
+.text-left::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: #000;
+    opacity: 0.5;
+
+}
